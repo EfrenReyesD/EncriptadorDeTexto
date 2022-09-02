@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encritador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="scritp" href="script.js">
+    
+</head>
+<body>
+    <div id="contenedor">
+        
+
+        <div class="contenedor-izquierdo">
+            <img id="logo" src="/imagenes/Logo.png" alt="">
+
+            <label for="entrada-text"></label>
+            <textarea name="entrada-text" id="entrada-text" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+            <p class="text-advertencia">⚠ Solo letras minúsculas y sin acentos</p>
+
+            <input id="btn-encriptar" type="button" value="Encriptar">
+            <input id="btn-desencriptar"type="button" value="Desencriptar">
+
+        </div>
+
+        <div class="contenedor-salida-text">
+
+            <div class="informacion" id="screen-result">
+                <label for="text-result"></label>
+                <textarea readonly name="text-result" id="text-result" cols="30" rows="10"></textarea>
+
+                <input id="btn-copiar"
+                type="button" value="Copiar">
+            </div>
+            
+            <div class="informacion" id="screen-error">
+                <img src="/imagenes/Muñeco.png" alt="">
+                <p class="mensaje-error">Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

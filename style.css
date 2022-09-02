@@ -1,0 +1,138 @@
+body{
+    background-color: #6e89a5;
+}
+
+p{
+    color: #495057;
+}
+#contenedor{
+    width: 1000px;
+    height: 650px;
+    background-color: #E5E5E5;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.contenedor-izquierdo{
+    width: 70%;
+    height: 650px;
+    /*background-color: yellowgreen;*/
+    position: absolute;
+    text-align: center;
+}
+#logo{
+    width: 120px;
+    height: 48px;
+    margin-top: 20px;
+    display: block;
+}
+
+.contenedor-izquierdo textarea{
+    width: 80%;
+    height: 400px;
+    font-size: 20px;
+    background-color: #E5E5E5;
+    border: none;
+    margin: 20px 0px 20px 80px;
+    resize: none;
+    outline: none;
+}
+
+.text-advertencia{
+    margin-right:230px ;
+    animation: cambio-tam 3s infinite;
+}
+@keyframes cambio-tam{
+    50% {margin-left: 200px;}
+    100%{margin-left: 0px;}
+}
+
+#btn-encriptar{
+    width: 220px;
+    height: 50px;
+    background-color: #0A3871;
+    color: #fff;
+    margin: 20px 20px 20px 20px;
+    border-radius: 15px;
+    
+}
+
+#btn-encriptar:hover{
+    transform: scale(1.03);
+}
+
+#btn-desencriptar{
+    width: 220px;
+    height: 50px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    margin: 20px 20px 20px 20px;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+}
+
+#btn-desencriptar:hover{
+    transform: scale(1.03);
+}
+.contenedor-salida-text{
+    width: 30%;
+    height: 650px;
+    /*background-color: rgb(88, 19, 19);*/
+    position: relative;
+    margin-left: 70%;
+    text-align:center;
+}
+.contenedor-salida-text .informacion{
+    width: 80%;
+    height: 585px;
+    position: absolute;
+    margin: 10% 10%;
+    border-radius: 10px;
+    border: 2px dotted black;
+    background-color: white;
+}
+
+#screen-result{
+    display: none;
+}
+
+#screen-error{
+    display: block;
+}
+.informacion img{
+    width: 90%;
+    margin-top: 60%;
+}
+#text-result{
+    width: 218px;
+    height: 420px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+
+.informacion #btn-copiar{
+    margin-top: 30%;
+    width: 220px;
+    height: 50px;
+    color: #0A3871;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+#btn-copiar:hover{
+    transform: scale(1.03);
+}
+
+.mensaje-error{
+    font-size: 20px;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    color: Gray;
+    font-weight: bold;
+}
