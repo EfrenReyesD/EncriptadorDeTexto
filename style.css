@@ -136,3 +136,14 @@ p{
     color: Gray;
     font-weight: bold;
 }
+#msg-view-movil{
+    margin: 50% 20%;
+    font-size: 30px;
+    color: rgb(167, 29, 29);
+    display: none;
+}
+@media screen and (max-width:980px){
+    #msg-view-movil{
+        display: block;
+    }
+}
